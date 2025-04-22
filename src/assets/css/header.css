@@ -1,0 +1,64 @@
+/* Scroll suave */
+.html-scroll {
+    scroll-behavior: smooth;
+  }
+  
+  /* Header fixo com transparência e blur */
+  .header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 1rem 2rem;
+  }
+  
+  /* Navegação */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item-link:hover {
+    color: #0070f3;
+  }
+  
+  /* Título da página */
+  .header-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 160px; /* espaço por causa do header fixo */
+    text-align: center;
+  }
+  
+  .header-subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Padding padrão das seções */
+  .section-container {
+    padding-top: 100px;
+    margin-bottom: 80px;
+  }
+  

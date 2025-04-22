@@ -5,14 +5,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Caudex';
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #f3e7d8;
+
 }
 
-header {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url('./imagem11.jpg');
+.main-section {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url('../images/image-6.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;
