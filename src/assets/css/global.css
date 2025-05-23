@@ -14,7 +14,7 @@ body {
 }
 
 .main-section {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url('../images/image-6.jpeg');
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url('../images/light.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -56,7 +56,7 @@ h1 {
 
 .info-card-contribua-images {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 30px;
 }
 
