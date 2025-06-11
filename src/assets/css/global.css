@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+  --background-color: #202124;
+  --text-color: #fff;
+  --button-bg: #000;
+  --button-text: #fff;
+  --button-hover-bg: transparent;
+  --button-hover-text: #000;
+  --input-border: #000;
+  --hr-color: #b5b5b5;
+  --header-bg: #262931;
+  --header-shadow: rgba(0, 0, 0, 0.1);
+  --nav-link-color: #fff;
+  --nav-link-hover: #0070f3;
+}
+
+[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #000;
+  --button-bg: #000;
+  --button-text: #fff;
+  --button-hover-bg: transparent;
+  --button-hover-text: #000;
+  --input-border: #000;
+  --hr-color: #b5b5b5;
+  --header-bg: rgba(255, 255, 255, 0.9);
+  --header-shadow: rgba(0, 0, 0, 0.1);
+  --nav-link-color: #000;
+  --nav-link-hover: #0070f3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +39,13 @@
 }
 
 body {
-  background-color: #f3e7d8;
-
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .main-section {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url('../images/light.jpeg');
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url('../images/teatro.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -41,16 +72,12 @@ h1 {
 
 .projeto-info {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   gap: 30px;
   margin-top: 50px;
 }
 
 .info-card {
-  /* background: white; */
   padding: 20px;
-  /* border-radius: 10px; */
-  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
   height: 1000px;
 }
 
@@ -123,29 +150,28 @@ h1 {
   justify-content: center;
 }
 
-.saiba-mais {
+.generic-button {
   width: 160px;
   border-radius: 1000px;
   transition: background 0.3s;
   height: 48px;
   padding: 0px 15px 0px 15px;
-  background-color: #000;
-  color: #fff;
-  margin-left: 145px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  margin-left: 120px;
   margin-top: 15px;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 1px solid var(--button-bg);
 }
 
-.saiba-mais:hover {
-  background-color: transparent;
+.generic-button:hover {
+  background-color: var(--button-hover-bg);
   transition: background-color 500ms, color 500ms;
-  color: #000
+  color: var(--button-hover-text);
 }
-
 
 footer {
-  color: #000;
+  color: var(--text-color);
   text-align: center;
   margin-top: 10px;
   height: 280px;
@@ -161,10 +187,10 @@ footer {
 hr {
   height: 1px;
   border: 0px;
-    border-top-width: 0px;
-    border-top-style: none;
-    border-top-color: currentcolor;
-  border-top: 1px solid #b5b5b5;
+  border-top-width: 0px;
+  border-top-style: none;
+  border-top-color: currentcolor;
+  border-top: 1px solid var(--hr-color);
 }
 
 .news-letter-box {
@@ -172,7 +198,7 @@ hr {
   flex-direction: column;
   justify-content: end;
   margin-top: 60px;
-  margin-left: 450px;
+  margin-left: 345px;
 }
 
 .input {
@@ -180,9 +206,74 @@ hr {
   background-color: transparent;
   padding-inline: 0.5em;
   padding-block: 0.7em;
-  border: 1px solid #000;
-  margin-right: 30px;
+  border: 1px solid var(--input-border);
+  margin-right: 36px;
   border-radius: 100px;
   width: 320px;
-  margin-left: 160px;
+  margin-left: 120px;
+  color: var(--text-color);
 }
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: 24px;
+}
+
+/* Responsive Images */
+/* img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.projeto-imagem img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: cover;
+  object-position: center;
+} */
+
+/* Media Queries for Responsive Design */
+/* @media screen and (max-width: 768px) {
+  .info-card-contribua-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card-contribua-images img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .projeto-content {
+    flex-direction: column;
+  }
+
+  .projeto-imagem {
+    margin-top: 20px;
+  }
+
+  .projeto-imagem img {
+    max-height: 400px;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 300px !important;
+  }
+} */
