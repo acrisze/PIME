@@ -58,6 +58,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  text-align: justify;
 }
 
 h1 {
@@ -74,6 +75,7 @@ h1 {
   display: grid;
   gap: 30px;
   margin-top: 50px;
+  text-align: justify;
 }
 
 .info-card {
@@ -191,6 +193,9 @@ hr {
   border-top-style: none;
   border-top-color: currentcolor;
   border-top: 1px solid var(--hr-color);
+  width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 
 .news-letter-box {
@@ -198,7 +203,7 @@ hr {
   flex-direction: column;
   justify-content: end;
   margin-top: 60px;
-  margin-left: 345px;
+  /* margin-left: 345px; */
 }
 
 .input {
@@ -214,7 +219,7 @@ hr {
   color: var(--text-color);
 }
 
-/* Theme Toggle Button */
+
 .theme-toggle {
   position: fixed;
   top: 5px;
@@ -231,49 +236,3 @@ hr {
   color: var(--text-color);
   font-size: 24px;
 }
-
-/* Responsive Images */
-/* img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-}
-
-.projeto-imagem img {
-  width: 100%;
-  height: auto;
-  max-height: 650px;
-  object-fit: cover;
-  object-position: center;
-} */
-
-/* Media Queries for Responsive Design */
-/* @media screen and (max-width: 768px) {
-  .info-card-contribua-images {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .info-card-contribua-images img {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .projeto-content {
-    flex-direction: column;
-  }
-
-  .projeto-imagem {
-    margin-top: 20px;
-  }
-
-  .projeto-imagem img {
-    max-height: 400px;
-  }
-
-  iframe {
-    width: 100% !important;
-    height: 300px !important;
-  }
-} */

@@ -4,6 +4,10 @@
     border-bottom: 1px solid #ccc;
 }
 
+.projeto-item:last-child {
+    border-bottom: 0px;
+}
+
 .projeto-content {
     max-width: 1200px;
     margin: 0 auto;
