@@ -45,7 +45,7 @@ body {
 }
 
 .main-section {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url('../images/teatro.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/teatro.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -101,7 +101,7 @@ h1 {
   align-items: center;
 }
 
-.info-card p h3{
+.info-card p h3 {
   margin-left: 60px;
   width: 80%;
 }
@@ -184,6 +184,8 @@ footer {
 .footer-info {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  align-self: center;
 }
 
 hr {
@@ -202,8 +204,11 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin-top: 60px;
-  /* margin-left: 345px; */
+  margin-top: 30px;
+  align-items: flex-end;
+  width: 80%;
+  align-self: center;
+  text-align: left;
 }
 
 .input {
@@ -215,14 +220,13 @@ hr {
   margin-right: 36px;
   border-radius: 100px;
   width: 320px;
-  margin-left: 120px;
   color: var(--text-color);
 }
 
 
 .theme-toggle {
   position: fixed;
-  top: 5px;
+  top: 0px;
   right: 20px;
   z-index: 1000;
   background: transparent;
@@ -235,4 +239,22 @@ hr {
   justify-content: center;
   color: var(--text-color);
   font-size: 24px;
+}
+
+.theme-toggle-mobile {
+  position: fixed;
+  top: 1.2rem;
+  right: 75px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: 24px;
+  display: none;
 }

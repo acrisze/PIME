@@ -1,246 +1,305 @@
 <html>
 
 <head>
-    <title>Revitalização do Centro Histórico de São Paulo</title>
-    <link rel="stylesheet" href="./src/assets/css/global.css">
-    <link rel="stylesheet" href="./src/assets/css/header.css">
-    <link rel="stylesheet" href="./src/assets/css/projetos.css">
+	<title>Revitalização do Centro Histórico de São Paulo</title>
+	<link rel="stylesheet" href="./src/assets/css/global.css">
+	<link rel="stylesheet" href="./src/assets/css/header.css">
+	<link rel="stylesheet" href="./src/assets/css/projetos.css">
 
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <header class="header-container">
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="#inicio" class="nav-item-link">Início</a></li>
-                <li><a href="#projeto" class="nav-item-link">O Projeto</a></li>
-                <li><a href="#projetos" class="nav-item-link">Prédios Históricos</a></li>
-                <li><a href="#retrofit" class="nav-item-link">Retrofit SP</a></li>
-                <li><a href="#sobre" class="nav-item-link">Sobre Nós</a></li>
-                <li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
-            </ul>
-        </nav>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-    </header>
+	<header class="header-container">
+		<nav class="navbar">
+			<ul class="nav-list">
+				<li><a href="#inicio" class="nav-item-link">Início</a></li>
+				<li><a href="#projeto" class="nav-item-link">O Projeto</a></li>
+				<li><a href="#projetos" class="nav-item-link">Prédios Históricos</a></li>
+				<li><a href="#retrofit" class="nav-item-link">Retrofit SP</a></li>
+				<li><a href="#sobre" class="nav-item-link">Sobre Nós</a></li>
+				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
+				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
+			</ul>
+		</nav>
+		<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+		<button class="hamburger" id="hamburgerMenu" aria-label="Abrir menu">☰</button>
+		<button class="theme-toggle-mobile" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+		<nav class="mobile-menu" id="mobileMenu">
+			<ul class="nav-list">
+				<li><a href="#inicio" class="nav-item-link">Início</a></li>
+				<li><a href="#projeto" class="nav-item-link">O Projeto</a></li>
+				<li><a href="#projetos" class="nav-item-link">Prédios Históricos</a></li>
+				<li><a href="#retrofit" class="nav-item-link">Retrofit SP</a></li>
+				<li><a href="#sobre" class="nav-item-link">Sobre Nós</a></li>
+				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
+				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <section id="inicio" class="header-info main-section">
-        <h1>Revitalização do Centro Histórico</h1>
-        <p class="subtitle">Um novo olhar para o coração de São Paulo</p>
-        <!-- <a href="https://www.prefeitura.sp.gov.br" class="cta-button">Saiba mais sobre o projeto</a> -->
-    </section>
+	<section id="inicio" class="header-info main-section">
+		<h1>Revitalização do Centro Histórico</h1>
+		<p class="subtitle">Um novo olhar para o coração de São Paulo</p>
+		<!-- <a href="https://www.prefeitura.sp.gov.br" class="cta-button">Saiba mais sobre o projeto</a> -->
+	</section>
 
-    <section id="projeto" class="container">
-        <div class="projeto-info">
-            <div class="info-card" style="height: 60em;">
-                <h1>Projeto RevitaSp</h1>
-                <p style="font-size: 28px; font-weight: 100;">
-                    O RevitaSP é um projeto dedicado em divulgar as revitalizações do centro histórico de São Paulo,
-                    dando maior visibilidade para o patrimônio histórico existente. Além de divulgar, o site tem como
-                    objetivo informatizar sobre incentivos fiscais oferecidos pela cidade.
-                    Se você se interessa por arquitetura, história ou quer entender como São Paulo está se reinventando,
-                    o RevitaSP é o lugar certo para começar.
-                </p>
-                <div class="info-card-contribua-images">
-                    <img width="90%" src="./src/assets/images/jacques-pilon-draw.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+	<section id="projeto" class="container">
+		<div class="projeto-info">
+			<div class="info-card" style="height: 60em;">
+				<h1>Projeto RevitaSp</h1>
+				<p style="font-size: 28px; font-weight: 100;">
+					O RevitaSP é um projeto dedicado em divulgar as revitalizações do centro histórico de São Paulo,
+					dando maior visibilidade para o patrimônio histórico existente. Além de divulgar, o site tem como
+					objetivo informatizar sobre incentivos fiscais oferecidos pela cidade.
+					Se você se interessa por arquitetura, história ou quer entender como São Paulo está se reinventando,
+					o RevitaSP é o lugar certo para começar.
+				</p>
+				<div class="info-card-contribua-images">
+					<img width="90%" src="./src/assets/images/jacques-pilon-draw.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <hr>
+	<hr>
 
-    <section id="projetos" class="container">
-        <h1 style="margin-top: 40px;">Prédios Históricos</h1>
-        <!-- Projeto 1 -->
-        <div class="projeto-item">
-            <div class="projeto-content">
-                <div class="projeto-texto">
-                    <h3 class="projeto-titulo">Edificio Martinelli</h3>
-                    <p class="projeto-descricao">
-                        O Edificio Martinelli considerado como o primeiro arranha-céu e símbolo do desenvolvimento
-                        urbano da cidade, teve sua inauguração em 1929. Foi realizado diversas restaurações buscando
-                        preservar suas características históricas. Após 7 anos fechado, o edifício reabriu as portas ao
-                        publico depois de passar pelo processo Retrofit, passando a se chamar "Terraço Martinelli".
-                    </p>
+	<section id="projetos" class="container">
+		<h1 style="margin-top: 40px;">Prédios Históricos</h1>
+		<!-- Projeto 1 -->
+		<div class="projeto-item">
+			<div class="projeto-content">
+				<div class="projeto-texto">
+					<h3 class="projeto-titulo">Edificio Martinelli</h3>
+					<p class="projeto-descricao">
+						O Edificio Martinelli considerado como o primeiro arranha-céu e símbolo do desenvolvimento
+						urbano da cidade, teve sua inauguração em 1929. Foi realizado diversas restaurações buscando
+						preservar suas características históricas. Após 7 anos fechado, o edifício reabriu as portas ao
+						publico depois de passar pelo processo Retrofit, passando a se chamar "Terraço Martinelli".
+					</p>
 
-                    <p class="projeto-status">Status: Finalizado</p>
-                    <p class="projeto-status">Data de Conclusão: Janeiro de 2024</p>
-                    <!-- <button class="saiba-mais">Acompanhar Projeto</button> -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6360103305096!2d-46.63758242516609!3d-23.545590578810604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5854575bec47%3A0xcff6dbd0a9dd6bac!2sCondom%C3%ADnio%20do%20Edif%C3%ADcio%20Martinelli!5e0!3m2!1spt-BR!2sbr!4v1747960015205!5m2!1spt-BR!2sbr"
-                        width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="projeto-imagem">
-                    <img src="./src/assets/images/martinelli.webp" alt="Martinelli" style="width: 100%; height: 670px;">
-                </div>
-            </div>
-        </div>
+					<p class="projeto-status">Status: Finalizado</p>
+					<p class="projeto-status">Data de Conclusão: Janeiro de 2024</p>
+					<!-- <button class="saiba-mais">Acompanhar Projeto</button> -->
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6360103305096!2d-46.63758242516609!3d-23.545590578810604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5854575bec47%3A0xcff6dbd0a9dd6bac!2sCondom%C3%ADnio%20do%20Edif%C3%ADcio%20Martinelli!5e0!3m2!1spt-BR!2sbr!4v1747960015205!5m2!1spt-BR!2sbr"
+						width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="projeto-imagem">
+					<img src="./src/assets/images/martinelli.webp" alt="Martinelli" style="width: 100%; height: 670px;">
+				</div>
+			</div>
+		</div>
 
-        <!-- Projeto 2 -->
-        <div class="projeto-item">
-            <div class="projeto-content">
-                <div class="projeto-texto">
-                    <h3 class="projeto-titulo">Edificio Jacques Pilon</h3>
-                    <p class="projeto-descricao">
-                        O Edifício Jacques Pilon, conhecido como antigo edifício irradiação inaugurado em 1944, passou
-                        por uma revitalização que preservou sua arquitetura original e modernizou suas estruturas para
-                        atender moradias residenciais. O projeto buscou valorizar sua importância histórica e adaptá-lo
-                        às necessidades atuais. A restauração contribui para o resgate do centro paulistano como espaço
-                        de cultura e memória urbana.
-                    </p>
-                    <p class="projeto-status">Status: Finalizado</p>
-                    <p class="projeto-status">Data de Conclusão: Abril de 2019</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.823864112965!2d-46.63774522516627!3d-23.53883667881529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5733f8ea61c9%3A0xcf1d5bf1dde08bd1!2sCondom%C3%ADnio%20Jacques%20Pilon%20Residence!5e0!3m2!1spt-BR!2sbr!4v1747960634995!5m2!1spt-BR!2sbr"
-                        width="600" height="378" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<!-- Projeto 2 -->
+		<div class="projeto-item">
+			<div class="projeto-content" style="flex-direction: row-reverse;">
+				<div class="projeto-texto">
+					<h3 class="projeto-titulo">Edificio Jacques Pilon</h3>
+					<p class="projeto-descricao">
+						O Edifício Jacques Pilon, conhecido como antigo edifício irradiação inaugurado em 1944, passou
+						por uma revitalização que preservou sua arquitetura original e modernizou suas estruturas para
+						atender moradias residenciais. O projeto buscou valorizar sua importância histórica e adaptá-lo
+						às necessidades atuais. A restauração contribui para o resgate do centro paulistano como espaço
+						de cultura e memória urbana.
+					</p>
+					<p class="projeto-status">Status: Finalizado</p>
+					<p class="projeto-status">Data de Conclusão: Abril de 2019</p>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.823864112965!2d-46.63774522516627!3d-23.53883667881529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5733f8ea61c9%3A0xcf1d5bf1dde08bd1!2sCondom%C3%ADnio%20Jacques%20Pilon%20Residence!5e0!3m2!1spt-BR!2sbr!4v1747960634995!5m2!1spt-BR!2sbr"
+						width="600" height="378" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    <!-- <button class="saiba-mais">Acompanhar Projeto</button> -->
-                </div>
-                <div class="projeto-imagem">
-                    <img src="./src/assets/images/jacques pilon.jpg" alt="Edificion Jaques Pilon"
-                        style="width: 100%; height: 700px;">
-                </div>
-            </div>
-        </div>
+					<!-- <button class="saiba-mais">Acompanhar Projeto</button> -->
+				</div>
+				<div class="projeto-imagem">
+					<img src="./src/assets/images/jacques pilon.jpg" alt="Edificion Jaques Pilon"
+						style="width: 100%; height: 700px;">
+				</div>
+			</div>
+		</div>
 
-        <!-- Projeto 3 -->
-        <div class="projeto-item">
-            <div class="projeto-content">
-                <div class="projeto-texto">
-                    <h3 class="projeto-titulo">Edifício Guinle</h3>
-                    <p class="projeto-descricao">
-                        O Edifício Guinle, um dos marcos históricos do centro de São Paulo inaugurado em 1913, passou
-                        por um processo de revitalização que recuperou sua imponência original. O projeto restaurou
-                        elementos da fachada, modernizou as instalações internas e buscou preservar seu valor
-                        arquitetônico. A iniciativa faz parte do esforço de requalificação do centro, valorizando o
-                        patrimônio e incentivando a ocupação da região que resultou no reconhecimento do seu valor
-                        patrimonial em 2007- Tombamento pelo Conpresp.
-                    </p>
-                    <p class="projeto-status">Status: Finalizado</p>
-                    <p class="projeto-status">Data de conclusão: Outubro de 2011</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14630.170062286317!2d-46.65251591333882!3d-23.548951311527798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ab2de4c003%3A0xb7578aa314b1bf38!2sEdif%C3%ADcio%20Guinle!5e0!3m2!1spt-BR!2sbr!4v1747962326300!5m2!1spt-BR!2sbr"
-                        width="600" height="390" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<!-- Projeto 3 -->
+		<div class="projeto-item">
+			<div class="projeto-content">
+				<div class="projeto-texto">
+					<h3 class="projeto-titulo">Edifício Guinle</h3>
+					<p class="projeto-descricao">
+						O Edifício Guinle, um dos marcos históricos do centro de São Paulo inaugurado em 1913, passou
+						por um processo de revitalização que recuperou sua imponência original. O projeto restaurou
+						elementos da fachada, modernizou as instalações internas e buscou preservar seu valor
+						arquitetônico. A iniciativa faz parte do esforço de requalificação do centro, valorizando o
+						patrimônio e incentivando a ocupação da região que resultou no reconhecimento do seu valor
+						patrimonial em 2007- Tombamento pelo Conpresp.
+					</p>
+					<p class="projeto-status">Status: Finalizado</p>
+					<p class="projeto-status">Data de conclusão: Outubro de 2011</p>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14630.170062286317!2d-46.65251591333882!3d-23.548951311527798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ab2de4c003%3A0xb7578aa314b1bf38!2sEdif%C3%ADcio%20Guinle!5e0!3m2!1spt-BR!2sbr!4v1747962326300!5m2!1spt-BR!2sbr"
+						width="600" height="390" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                </div>
-                <div class="projeto-imagem">
-                    <img src="./src/assets/images/guinle.jpg" style="height: 770px;" alt="Edifício Guinle">
-                </div>
-            </div>
-        </div>
-    </section>
+				</div>
+				<div class="projeto-imagem">
+					<img src="./src/assets/images/guinle.png" style="height: 770px;" alt="Edifício Guinle">
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <hr>
+	<hr>
 
-    <section id="retrofit" class="container">
-        <h1 style="margin-top: 40px;">Retrofit</h1>
-        <div class="projeto-info">
-            <div class="info-card" style="height: auto;">
-                <h2 style="font-size: 32px; margin: 30px 0 20px;">O que é o Retrofit em SP?</h2>
-                <p style="font-size: 20px; margin-bottom: 40px;">
-                    Retrofit é o processo de atualizar prédios antigos, modernizando instalações para garantir
-                    segurança, conforto e novas funcionalidades, sem perder sua essência histórica.
-                </p>
+	<section id="retrofit" class="container">
+		<h1 style="margin: 40px 0px 0px 0px;">Retrofit</h1>
+		<div class="projeto-info" style="margin-bottom: 15px;">
+			<div class="info-card" style="height: auto;">
+				<h2 style="font-size: 32px; margin: 0px 0 20px;">O que é o Retrofit em SP?</h2>
+				<p style="font-size: 20px; margin-bottom: 40px;">
+					Retrofit é o processo de atualizar prédios antigos, modernizando instalações para garantir
+					segurança, conforto e novas funcionalidades, sem perder sua essência histórica.
+				</p>
 
-                <h2 style="font-size: 32px; margin: 30px 0 20px;">Benefícios fiscais previstos pelo programa</h2>
-                <p style="font-size: 20px; margin-bottom: 20px;">
-                    O Programa Requalifica Centro (Lei nº 17.577/2021), sancionado em 21 de julho de 2021, oferece
-                    incentivos para estimular transformações em construções centenárias:
-                </p>
+				<h2 style="font-size: 32px; margin: 30px 0 20px;">Benefícios fiscais previstos pelo programa</h2>
+				<p style="font-size: 20px; margin-bottom: 20px;">
+					O Programa Requalifica Centro (Lei nº 17.577/2021), sancionado em 21 de julho de 2021, oferece
+					incentivos para estimular transformações em varruções centenárias:
+				</p>
 
-                <ul style="font-size: 20px; line-height: 1.6; margin-left: 20px; margin-bottom: 30px;">
-                    <li>Remissão de créditos de IPTU</li>
-                    <li>Isenção total de IPTU nos 3 anos seguintes à conclusão da obra</li>
-                    <li>Alíquotas progressivas de IPTU ao longo de 5 anos, até o valor integral no 6º ano</li>
-                    <li>ISS reduzido a 2% para serviços relacionados à requalificação (engenharia, arquitetura, limpeza
-                        etc.)</li>
-                    <li>Isenção de ITBI ao adquirir o imóvel</li>
-                    <li>Isenção de taxas municipais para instalação e funcionamento por 5 anos</li>
-                    <li>Não computar áreas de uso não-residencial como limitantes de construção</li>
-                    <li>Sem exigência de outorga onerosa ao mudar o uso do prédio</li>
-                </ul>
+				<ul style="font-size: 20px; line-height: 1.6; margin-left: 20px; margin-bottom: 30px;">
+					<li>Remissão de créditos de IPTU</li>
+					<li>Isenção total de IPTU nos 3 anos seguintes à conclusão da obra</li>
+					<li>Alíquotas progressivas de IPTU ao longo de 5 anos, até o valor integral no 6º ano</li>
+					<li>ISS reduzido a 2% para serviços relacionados à requalificação (engenharia, arquitetura, limpeza
+						etc.)</li>
+					<li>Isenção de ITBI ao adquirir o imóvel</li>
+					<li>Isenção de taxas municipais para instalação e funcionamento por 5 anos</li>
+					<li>Não computar áreas de uso não-residencial como limitantes de varrução</li>
+					<li>Sem exigência de outorga onerosa ao mudar o uso do prédio</li>
+				</ul>
 
-                <div>
-                    <h2 style="font-size: 32px; margin: 30px 0 20px;">Em resumo</h2>
-                    <p style="font-size: 20px; line-height: 1.6;">
-                        O retrofit em SP transforma prédios antigos, principalmente na região central (perímetro de 6,4
-                        km²), tornando-os moradias e espaços úteis, com extensa economia de impostos e modernização
-                        urbana — beneficiando moradores, investidores e o patrimônio histórico da cidade.
-                    </p>
-                </div>
+				<div>
+					<h2 style="font-size: 32px; margin: 30px 0 20px;">Em resumo</h2>
+					<p style="font-size: 20px; line-height: 1.6;">
+						O retrofit em SP transforma prédios antigos, principalmente na região central (perímetro de 6,4
+						km²), tornando-os moradias e espaços úteis, com extensa economia de impostos e modernização
+						urbana — beneficiando moradores, investidores e o patrimônio histórico da cidade.
+					</p>
+				</div>
 
-                <p>Saiba mais em: <a
-                        href="https://prefeitura.sp.gov.br/w/noticia/prefeitura-de-sao-paulo-sanciona-lei-que-propoe-incentivos-fiscais-para-retrofit-de-predios-antigos-da-regiao-central"
-                        target="_blank" style="text-decoration: none; margin-top: 20px; color: rgb(65, 86, 220);">
-                        https://prefeitura.sp.gov.br/w/noticia/prefeitura-de-sao-paulo-sanciona-lei-que-propoe-incentivos-fiscais-para-retrofit-de-predios-antigos-da-regiao-central
-                    </a></p>
-            </div>
-        </div>
-    </section>
+				<p>Saiba mais em: <a
+						href="https://prefeitura.sp.gov.br/w/noticia/prefeitura-de-sao-paulo-sanciona-lei-que-propoe-incentivos-fiscais-para-retrofit-de-predios-antigos-da-regiao-central"
+						target="_blank" style="text-decoration: none; margin-top: 20px; color: rgb(65, 86, 220);">
+						https://prefeitura.sp.gov.br/w/noticia/prefeitura-de-sao-paulo-sanciona-lei-que-propoe-incentivos-fiscais-para-retrofit-de-predios-antigos-da-regiao-central
+					</a></p>
+			</div>
+		</div>
+	</section>
 
-    <hr>
+	<hr>
 
-    <section id="sobre" class="container">
-        <div class="projeto-info">
-            <div class="info-card" style="height: auto; padding: 40px;">
-                <h1 style="margin-bottom: 15px;">Sobre Nós</h1>
-                <p style="font-size: 28px; margin-bottom: 40px;">
-                    O RevitaSP foi desenvolvido com o objetivo de aproximar a comunidade do centro histórico de São
-                    Paulo
-                    das entidades responsáveis por sua conservação. Através da nossa plataforma, os usuários podem
-                    contribuir ativamente para a preservação e melhoria deste importante patrimônio histórico.
-                </p>
-                <div style="display: flex; gap: 60px; align-items: flex-start;">
-                    <div style="flex: 1;">
-                        <img width="100%" style="border-radius: 10px; object-fit: cover;"
-                            src="./src/assets/images/image-4.jpeg" alt="Imagem do Centro Histórico">
-                    </div>
-                    <div
-                        style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                        <p style="font-size: 20px; line-height: 1.6; margin-bottom: 30px;">
-                            Nossa missão é promover a interação entre os cidadãos e os órgãos competentes, facilitando o
-                            envio de informações sobre manutenção e conservação. Queremos incentivar a participação da
-                            comunidade na preservação do centro histórico de São Paulo, tornando a cidade um lugar mais
-                            agradável para todos.
-                        </p>
-                        <button class="generic-button" style="align-self: flex-start;">Saiba mais</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section id="sobre" class="container">
+		<div class="projeto-info">
+			<div class="info-card" style="height: auto; padding: 40px;">
+				<h1 style="margin-bottom: 15px;">Sobre Nós</h1>
+				<p style="font-size: 28px; margin-bottom: 40px;">
+					O RevitaSP foi desenvolvido com o objetivo de aproximar a comunidade do centro histórico de São
+					Paulo
+					das entidades responsáveis por sua conservação. Através da nossa plataforma, os usuários podem
+					contribuir ativamente para a preservação e melhoria deste importante patrimônio histórico.
+				</p>
+				<div style="display: flex; gap: 60px; align-items: flex-start;">
+					<div style="flex: 1;">
+						<img width="100%" style="border-radius: 10px; object-fit: cover;"
+							src="./src/assets/images/image-4.jpeg" alt="Imagem do Centro Histórico">
+					</div>
+					<div
+						style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+						<p style="font-size: 20px; line-height: 1.6; margin-bottom: 30px;">
+							Nossa missão é promover a interação entre os cidadãos e os órgãos competentes, facilitando o
+							envio de informações sobre manutenção e conservação. Queremos incentivar a participação da
+							comunidade na preservação do centro histórico de São Paulo, tornando a cidade um lugar mais
+							agradável para todos.
+						</p>
+						<button class="generic-button" style="align-self: flex-start;">Saiba mais</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-    <div style="display: flex; justify-content: center;">
-        <hr style="margin-top: 50px; height: 0.5px; width: 80%;">
-    </div>
+	<div style="display: flex; justify-content: center;">
+		<hr style="margin-top: 50px; height: 0.5px; width: 80%;">
+	</div>
 
-    <footer>
-        <div class="footer-info">
-            <p style="font-size: 38px; margin-left: 10%;">RevitaSp</p>
-            <div
-                style="margin-right: 7.2em; display: flex; justify-content: space-around; font-weight: 100; padding-top: 10px; padding-bottom: 10px;">
-                <!-- <p style="margin-right: 20px;">(11) 3456-7890</p> -->
-                <p style="margin-right: 3em;">São Paulo, SP, Brasil</p>
-            </div>
-            <!-- <p style="margin-right: 90px;">Para mais informações, entre em contato através do email: contato@revitalizasp.gov.br</p> -->
-        </div>
-        <div class="news-letter-box">
-            <p style="font-size: 32px;">Assine Nossa Newsletter</h2>
-            <div>
-                <p style="margin-right: 225px;">Insira seu E-mail</p>
-                <input class="input" type="text" name="inscrever" id="inscrever" placeholder="seuemail@exemplo.com"
-                    style="padding-left: 20px;">
-                <button style="margin-left: 0px; width: 120px" class="generic-button">Inscrever</button>
-            </div>
-        </div>
-    </footer>
+	<footer>
+		<div class="footer-info">
+			<h1>RevitaSp</h1>
+			<h2>São Paulo, SP, Brasil</h2>
+		</div>
+		<div class="news-letter-box">
+			<div>
+				<h2>Assine Nossa Newsletter</h2>
+				<div>
+					<p>Insira seu E-mail</p>
+					<form id="subscribeForm">
+						<input class="input" type="text" name="inscrever" id="inscrever"
+							placeholder="seuemail@exemplo.com" style="padding-left: 20px;">
+						<button style="margin-left: 0px; width: 120px" class="generic-button"
+							type="submit">Inscrever</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-    <script src="./src/scripts/index.js"></script>
+	<script src="./src/assets/scripts/index.js"></script>
+	<script>
+		var form = document.getElementById('subscribeForm');
+
+		form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+
+			var email = document.getElementById('inscrever').value;
+
+			var url = 'https://rfzdciezrbgkhpcfacet.supabase.co/rest/v1/news_letter';
+			var apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmemRjaWV6cmJna2hwY2ZhY2V0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxMTU0OTksImV4cCI6MjA2NTY5MTQ5OX0.dZwWjmraUNYYw7eYjKPuf3_9qmtpPi5_I1rWh2ld9-c';
+
+			try {
+				var requisicao = await fetch(url, {
+					method: 'POST',
+					headers: {
+						'apikey': apiKey,
+						'Authorization': `Bearer ${apiKey}`,
+						'Content-Type': 'application/json',
+						'Prefer': 'return=representation'
+					},
+					body: JSON.stringify({ email })
+				});
+
+				var data = await requisicao.json();
+				var resposta;
+
+				if (requisicao.ok) {
+					resposta = 'E-mail cadastrado com sucesso!';
+				} else {
+					if (requisicao.status === 409) {
+						resposta = 'E-mail já cadastrado.';
+					} else {
+						resposta = 'Erro desconhecido ao cadastrar: ' + JSON.stringify(data);
+					}
+				}
+
+				alert(resposta);
+			} catch (error) {
+				console.log('Erro ->', error.message);
+			}
+
+			document.getElementById('inscrever').value = '';
+		});
+	</script>
 </body>
 
 </html>

@@ -2,188 +2,206 @@
 <html lang="pt-BR">
 
 <head>
-    <title>Colabore - RevitaSP</title>
-    <link rel="stylesheet" href="./src/assets/css/global.css">
-    <link rel="stylesheet" href="./src/assets/css/header.css">
-    <link rel="stylesheet" href="./src/assets/css/projetos.css">
-    <meta charset="UTF-8">
-    <style>
-        .form-container {
-            max-width: 800px;
-            margin: 120px auto 40px;
-            padding: 20px;
-        }
+	<title>Colabore - RevitaSP</title>
+	<link rel="stylesheet" href="./src/assets/css/global.css">
+	<link rel="stylesheet" href="./src/assets/css/header.css">
+	<link rel="stylesheet" href="./src/assets/css/projetos.css">
+	<link rel="stylesheet" href="./src/assets/css/colabore.css">
+	<meta charset="UTF-8">
 
-        .form-group {
-            margin-bottom: 20px;
-        }
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-size: 18px;
-            color: var(--text-color);
-        }
-
-        .form-group input[type="text"],
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid var(--input-border);
-            border-radius: 8px;
-            background-color: transparent;
-            color: var(--text-color);
-            font-size: 16px;
-        }
-
-        .form-group textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .file-upload {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-        }
-
-        .file-upload input[type="file"] {
-            display: none;
-        }
-
-        .file-upload label {
-            display: block;
-            padding: 12px;
-            background-color: var(--button-bg);
-            color: var(--button-text);
-            border-radius: 8px;
-            cursor: pointer;
-            text-align: center;
-            transition: background-color 0.3s;
-        }
-
-        .file-upload label:hover {
-            background-color: var(--button-hover-bg);
-            color: var(--button-hover-text);
-        }
-
-        .image-preview {
-            margin-top: 20px;
-            max-width: 100%;
-            display: none;
-        }
-
-        .image-preview img {
-            max-width: 100%;
-            max-height: 300px;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-
-        .submit-button {
-            background-color: var(--button-bg);
-            color: var(--button-text);
-            padding: 12px 24px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        .submit-button:hover {
-            background-color: var(--button-hover-bg);
-            color: var(--button-hover-text);
-        }
-    </style>
 </head>
 
 <body>
-    <header class="header-container">
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="index.html#inicio" class="nav-item-link">Início</a></li>
-                <li><a href="index.html#projeto" class="nav-item-link">O Projeto</a></li>
-                <li><a href="index.html#projetos" class="nav-item-link">Prédios Históricos</a></li>
-                <li><a href="index.html#retrofit" class="nav-item-link">Retrofit SP</a></li>
-                <li><a href="index.html#sobre" class="nav-item-link">Sobre Nós</a></li>
-                <li><a href="colabore.html" class="nav-item-link">Colabore</a></li>
-            </ul>
-        </nav>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-    </header>
+	<header class="header-container">
+		<nav class="navbar">
+			<ul class="nav-list">
+				<li><a href="index.html#inicio" class="nav-item-link">Início</a></li>
+				<li><a href="index.html#projeto" class="nav-item-link">O Projeto</a></li>
+				<li><a href="index.html#projetos" class="nav-item-link">Prédios Históricos</a></li>
+				<li><a href="index.html#retrofit" class="nav-item-link">Retrofit SP</a></li>
+				<li><a href="index.html#sobre" class="nav-item-link">Sobre Nós</a></li>
+				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
+				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
+			</ul>
+		</nav>
+		<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+		<button class="theme-toggle-mobile" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+		<button class="hamburger" id="hamburgerMenu" aria-label="Abrir menu">☰</button>
+		<nav class="mobile-menu" id="mobileMenu">
+			<ul class="nav-list">
+				<li><a href="index.html#inicio" class="nav-item-link">Início</a></li>
+				<li><a href="index.html#projeto" class="nav-item-link">O Projeto</a></li>
+				<li><a href="index.html#projetos" class="nav-item-link">Prédios Históricos</a></li>
+				<li><a href="index.html#retrofit" class="nav-item-link">Retrofit SP</a></li>
+				<li><a href="index.html#sobre" class="nav-item-link">Sobre Nós</a></li>
+				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
+				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <div class="form-container">
-        <h1>Colabore com o RevitaSP</h1>
-        <p style="margin-bottom: 30px; font-size: 18px;">
-            Compartilhe suas sugestões e contribua para a revitalização do centro histórico de São Paulo.
-        </p>
+	<div class="form-container">
+		<h1>Colabore com o RevitaSP</h1>
+		<p style="margin-bottom: 30px; font-size: 18px;">
+			Compartilhe suas sugestões e contribua para a revitalização do centro histórico de São Paulo.
+		</p>
 
-        <form id="colaboracaoForm">
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
-            </div>
+		<form id="colaboracaoForm">
+			<div class="form-group">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+			</div>
 
-            <div class="form-group">
-                <label for="sugestao">Sua Sugestão:</label>
-                <textarea id="sugestao" name="sugestao" required 
-                    placeholder="Descreva sua sugestão de melhoria ou manutenção para o centro histórico..."></textarea>
-            </div>
+			<div class="form-group">
+				<label for="sugestao">Sua Sugestão:</label>
+				<textarea id="sugestao" name="sugestao" required
+					placeholder="Descreva sua sugestão de melhoria ou manutenção para o centro histórico..."></textarea>
+			</div>
 
-            <div class="form-group">
-                <label>Imagem (opcional):</label>
-                <div class="file-upload">
-                    <input type="file" id="imagem" name="imagem" accept="image/*" onchange="previewImage(event)">
-                    <label for="imagem">Escolher arquivo</label>
-                </div>
-                <div class="image-preview" id="imagePreview">
-                    <img id="preview" src="#" alt="Preview da imagem">
-                </div>
-            </div>
+			<div class="form-group">
+				<label>Imagem (opcional):</label>
+				<div class="file-upload">
+					<input type="file" id="imagem" name="imagem" accept="image/*" onchange="previewImage(event)">
+					<label for="imagem">Escolher arquivo</label>
+				</div>
+				<div class="image-preview" id="imagePreview">
+					<img id="preview" src="#" alt="Preview da imagem">
+				</div>
+			</div>
 
-            <button type="submit" class="submit-button">Enviar Sugestão</button>
-        </form>
-    </div>
+			<div style="display: flex; justify-content: center;">
+				<button type="submit" class="submit-button">Enviar Sugestão</button>
+			</div>
+		</form>
+	</div>
 
-    <script>
-        function previewImage(event) {
-            const preview = document.getElementById('preview');
-            const previewContainer = document.getElementById('imagePreview');
-            const file = event.target.files[0];
-            const reader = new FileReader();
+	<script src="./src/assets/scripts/index.js"></script>
 
-            reader.onload = function() {
-                preview.src = reader.result;
-                previewContainer.style.display = 'block';
-            }
+	<script>
+		function previewImage(event) {
+			var preview = document.getElementById('preview');
+			var previewContainer = document.getElementById('imagePreview');
+			var file = event.target.files[0];
+			var reader = new FileReader();
 
-            if (file) {
-                reader.readAsDataURL(file);
-            }
-        }
+			reader.onload = function () {
+				preview.src = reader.result;
+				previewContainer.style.display = 'block';
+			}
 
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        const currentTheme = localStorage.getItem('theme') || 
-            (prefersDarkScheme.matches ? 'dark' : 'light');
-        
-        document.documentElement.setAttribute('data-theme', currentTheme);
-        updateThemeIcon(currentTheme);
-        
-        themeToggle.addEventListener('click', () => {
-            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-        
-        function updateThemeIcon(theme) {
-            themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-        }
-    </script>
+			if (file) {
+				reader.readAsDataURL(file);
+			}
+		}
+
+		var themeToggle = document.getElementById('themeToggle');
+		var prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+		var currentTheme = localStorage.getItem('theme') ||
+			(prefersDarkScheme.matches ? 'dark' : 'light');
+
+		document.documentElement.setAttribute('data-theme', currentTheme);
+		updateThemeIcon(currentTheme);
+
+		themeToggle.addEventListener('click', () => {
+			var newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+			document.documentElement.setAttribute('data-theme', newTheme);
+			localStorage.setItem('theme', newTheme);
+			updateThemeIcon(newTheme);
+		});
+
+		function updateThemeIcon(theme) {
+			themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+		}
+
+		async function criarColaboracao(nome, sugestao, imagem) {
+			console.log("🚀 ~ criarColaboracao ~ imagem:", imagem)
+			console.log("🚀 ~ criarColaboracao ~ imagem:", imagem.type)
+			console.log("🚀 ~ criarColaboracao ~ sugestao:", sugestao)
+			console.log("🚀 ~ criarColaboracao ~ nome:", nome)
+			var url = 'https://rfzdciezrbgkhpcfacet.supabase.co';
+			var apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmemRjaWV6cmJna2hwY2ZhY2V0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxMTU0OTksImV4cCI6MjA2NTY5MTQ5OX0.dZwWjmraUNYYw7eYjKPuf3_9qmtpPi5_I1rWh2ld9-c';
+			var storageName = 'images';
+			var imagemCriadaUrl;
+
+			if (imagem) {
+				var fileName = `${Date.now()}_${imagem.name}`;
+				var uploadUrl = `${url}/storage/v1/object/${storageName}/public/${fileName}`;
+
+				try {
+					var uploadRequisicao = await fetch(uploadUrl, {
+						method: 'POST',  // <<< ALTERADO AQUI
+						headers: {
+							'apikey': apiKey,
+							'Authorization': `Bearer ${apiKey}`,
+							'Content-Type': imagem.type,
+							'Content-Length': imagem.size,
+							'x-upsert': true
+						},
+						body: imagem
+					});
+
+					if (!uploadRequisicao.ok) {
+						console.error(await uploadRequisicao.json());
+						alert('Erro ao fazer upload da imagem!');
+						return;
+					}
+
+					imagemCriadaUrl = `${url}/storage/v1/object/${storageName}/public/${fileName}`;
+					console.log('Imagem salva em:', imagemCriadaUrl);
+					alert('Deu certo!')
+				} catch (error) {
+					console.error('Upload error:', error);
+					throw new Error('Falha no upload da imagem.');
+				}
+			}
+
+			try {
+				var requisicao = await fetch(
+					`${url}/rest/v1/colaboracoes`, {
+					method: 'POST',
+					headers: {
+						'apikey': apiKey,
+						'Authorization': `Bearer ${apiKey}`,
+						'Content-Type': 'application/json',
+						'Prefer': 'return=representation'
+					},
+					body: JSON.stringify({ nome, sugestao, imagem_url: imagemCriadaUrl })
+				});
+
+				var data = await requisicao.json();
+
+				if (!requisicao.ok) {
+					console.error('Erro ao salvar no banco:', data);
+					throw new Error('Erro ao salvar a mensagem.');
+				}
+
+				return data;
+			} catch (error) {
+				console.log("🚀 ~ criarColaboracao ~ error:", error)
+				throw new Error('Erro ao salvar a mensagem.');
+			}
+		}
+
+		var form = document.getElementById('colaboracaoForm');
+
+		form.addEventListener('submit', async function (event) {
+			event.preventDefault();
+			var nome = document.getElementById('nome').value;
+			var sugestao = document.getElementById('sugestao').value;
+			var imagem = document.getElementById('imagem').files[0];
+
+			await criarColaboracao(nome, sugestao, imagem);
+			alert('Sua sugestão foi enviada com sucesso!');
+			form.reset();
+			document.getElementById('imagePreview').style.display = 'none';
+
+
+		});
+
+	</script>
 </body>
 
 </html>
