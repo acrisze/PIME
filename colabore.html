@@ -88,7 +88,7 @@
 
 			reader.onload = function () {
 				preview.src = reader.result;
-				previewContainer.style.display = 'block';
+				previewContainer.style.display = 'flex';
 			}
 
 			if (file) {
@@ -96,31 +96,7 @@
 			}
 		}
 
-		var themeToggle = document.getElementById('themeToggle');
-		var prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-		var currentTheme = localStorage.getItem('theme') ||
-			(prefersDarkScheme.matches ? 'dark' : 'light');
-
-		document.documentElement.setAttribute('data-theme', currentTheme);
-		updateThemeIcon(currentTheme);
-
-		themeToggle.addEventListener('click', () => {
-			var newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-			document.documentElement.setAttribute('data-theme', newTheme);
-			localStorage.setItem('theme', newTheme);
-			updateThemeIcon(newTheme);
-		});
-
-		function updateThemeIcon(theme) {
-			themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
-		}
-
 		async function criarColaboracao(nome, sugestao, imagem) {
-			console.log("🚀 ~ criarColaboracao ~ imagem:", imagem)
-			console.log("🚀 ~ criarColaboracao ~ imagem:", imagem.type)
-			console.log("🚀 ~ criarColaboracao ~ sugestao:", sugestao)
-			console.log("🚀 ~ criarColaboracao ~ nome:", nome)
 			var url = 'https://rfzdciezrbgkhpcfacet.supabase.co';
 			var apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmemRjaWV6cmJna2hwY2ZhY2V0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxMTU0OTksImV4cCI6MjA2NTY5MTQ5OX0.dZwWjmraUNYYw7eYjKPuf3_9qmtpPi5_I1rWh2ld9-c';
 			var storageName = 'images';
