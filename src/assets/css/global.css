@@ -332,8 +332,8 @@ hr {
     padding: 10px 30px !important;
     box-sizing: border-box;
   }
+
   .main-section {
-    margin-top: 60px;
     padding-top: 0;
     min-height: unset;
     height: 60vh;
@@ -345,7 +345,9 @@ hr {
     background-repeat: no-repeat;
     overflow: hidden;
   }
-  .main-section h1, .main-section .subtitle {
+
+  .main-section h1,
+  .main-section .subtitle {
     text-align: center;
     padding: 0 8px;
     font-size: 1.8em;
