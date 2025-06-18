@@ -46,8 +46,9 @@ body {
 
 .main-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/teatro.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   color: white;
   text-align: center;
@@ -57,8 +58,9 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 32px;
   text-align: justify;
+  width: 100%;
 }
 
 h1 {
@@ -80,7 +82,7 @@ h1 {
 
 .info-card {
   padding: 20px;
-  height: 1000px;
+  height: auto;
 }
 
 .info-card-contribua-images {
@@ -198,6 +200,8 @@ hr {
   width: 80%;
   margin: 0 auto;
   display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .news-letter-box {
@@ -223,9 +227,7 @@ hr {
   color: var(--text-color);
 }
 
-
 .theme-toggle {
-  position: fixed;
   top: 0px;
   right: 20px;
   z-index: 1000;
@@ -242,7 +244,6 @@ hr {
 }
 
 .theme-toggle-mobile {
-  position: fixed;
   top: 1.2rem;
   right: 75px;
   z-index: 1000;
@@ -257,4 +258,174 @@ hr {
   color: var(--text-color);
   font-size: 24px;
   display: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+  }
+
+  .info-card {
+    height: auto;
+    padding: 10px;
+  }
+
+  .info-card h3 {
+    font-size: 28px;
+  }
+
+  .info-card p {
+    font-size: 16px;
+  }
+
+  .info-card-contribua-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card-sobre-images {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .news-letter-box {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .input {
+    width: 100%;
+    max-width: 320px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .generic-button {
+    margin-left: 0;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .container {
+    padding: 12px 8px;
+  }
+
+  .main-section {
+    padding-top: 90px;
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-space {
+    padding: 10px 30px !important;
+    box-sizing: border-box;
+  }
+  .main-section {
+    margin-top: 60px;
+    padding-top: 0;
+    min-height: unset;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .main-section h1, .main-section .subtitle {
+    text-align: center;
+    padding: 0 8px;
+    font-size: 1.8em;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  .container {
+    padding: 6px 4px;
+  }
+
+  .hr-line {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-card,
+  .projeto-texto,
+  .projeto-imagem,
+  .footer-info,
+  .news-letter-box,
+  .sobre-nos-images,
+  .sobre-nos-image-box {
+    padding: 10px 30px !important;
+    box-sizing: border-box;
+  }
+
+  .info-card-contribua-images,
+  .info-card-sobre-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card-contribua-images img,
+  .info-card-sobre-images img,
+  .sobre-nos-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .info-card h3,
+  .projeto-titulo,
+  .sobre-nos-nome {
+    font-size: 1.1em;
+  }
+
+  .info-card p,
+  .projeto-descricao,
+  .projeto-status,
+  .sobre-nos-nome {
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .footer-info h1,
+  .footer-info h2 {
+    font-size: 1.1em;
+  }
+
+  .news-letter-box h2,
+  .news-letter-box p {
+    font-size: 1em;
+  }
 }

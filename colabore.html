@@ -3,6 +3,7 @@
 
 <head>
 	<title>Colabore - RevitaSP</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./src/assets/css/global.css">
 	<link rel="stylesheet" href="./src/assets/css/header.css">
 	<link rel="stylesheet" href="./src/assets/css/projetos.css">
@@ -14,31 +15,27 @@
 </head>
 
 <body>
-	<header class="header-container">
-		<nav class="navbar">
-			<ul class="nav-list">
-				<li><a href="index.html#inicio" class="nav-item-link">Início</a></li>
-				<li><a href="index.html#projeto" class="nav-item-link">O Projeto</a></li>
-				<li><a href="index.html#projetos" class="nav-item-link">Prédios Históricos</a></li>
-				<li><a href="index.html#retrofit" class="nav-item-link">Retrofit SP</a></li>
-				<li><a href="index.html#sobre" class="nav-item-link">Sobre Nós</a></li>
-				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
-				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
-			</ul>
-		</nav>
-		<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-		<button class="theme-toggle-mobile" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-		<button class="hamburger" id="hamburgerMenu" aria-label="Abrir menu">☰</button>
-		<nav class="mobile-menu" id="mobileMenu">
-			<ul class="nav-list">
-				<li><a href="index.html#inicio" class="nav-item-link">Início</a></li>
-				<li><a href="index.html#projeto" class="nav-item-link">O Projeto</a></li>
-				<li><a href="index.html#projetos" class="nav-item-link">Prédios Históricos</a></li>
-				<li><a href="index.html#retrofit" class="nav-item-link">Retrofit SP</a></li>
-				<li><a href="index.html#sobre" class="nav-item-link">Sobre Nós</a></li>
-				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
-				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
-			</ul>
+	<header>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item"><a href="./index.html#inicio" class="nav-link">Início</a></li>
+						<li class="nav-item"><a href="./index.html#projeto" class="nav-link">O Projeto</a></li>
+						<li class="nav-item"><a href="./index.html#projetos" class="nav-link">Prédios Históricos</a>
+						</li>
+						<li class="nav-item"><a href="./index.html#retrofit" class="nav-link">Retrofit SP</a></li>
+						<li class="nav-item"><a href="./index.html#sobre" class="nav-link">Sobre Nós</a></li>
+						<li class="nav-item"><a href="./colabore.html" class="nav-link">Colabore</a></li>
+						<li class="nav-item"><a href="./colaboracoes.html" class="nav-link">Colaborações</a></li>
+					</ul>
+				</div>
+				<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+			</div>
 		</nav>
 	</header>
 
@@ -155,7 +152,6 @@
 
 				return data;
 			} catch (error) {
-				console.log("🚀 ~ criarColaboracao ~ error:", error)
 				throw new Error('Erro ao salvar a mensagem.');
 			}
 		}
@@ -177,6 +173,10 @@
 		});
 
 	</script>
+
+	<!-- Bootstrap JS and Popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

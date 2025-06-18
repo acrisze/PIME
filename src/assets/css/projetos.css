@@ -31,7 +31,7 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: 8px;
+	border-radius: 10px;
 }
 
 .projeto-mapa {
@@ -43,21 +43,22 @@
 }
 
 .projeto-titulo {
-	font-size: 36px;
+	font-size: 2em;
 	margin-bottom: 20px;
 	color: var(--text-color);
 }
 
 .projeto-descricao {
-	font-size: 18px;
+	font-size: 1.1em;
 	line-height: 1.6;
 	margin-bottom: 20px;
 	color: var(--text-color);
 }
 
 .projeto-status {
-	font-size: 16px;
+	font-size: 1em;
 	color: var(--text-color);
+	font-weight: bold;
 	margin-bottom: 10px;
 }
 
@@ -94,6 +95,47 @@
 	margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+	.projeto-content {
+		gap: 20px;
+	}
+
+	.projeto-titulo {
+		font-size: 32px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.projeto-content {
+		flex-direction: column;
+	}
+
+	.projeto-texto {
+		width: 100%;
+	}
+
+	.projeto-imagem {
+		width: 100%;
+	}
+
+	.projeto-imagem img {
+		height: 400px;
+	}
+
+	.projeto-titulo {
+		font-size: 1.8em;
+	}
+
+	.projeto-descricao {
+		font-size: 1em;
+	}
+
+	iframe {
+		width: 100% !important;
+		height: 300px !important;
+	}
+}
+
 @media (max-width: 700px) {
 	.sobre-nos-images {
 		flex-direction: column;
@@ -116,37 +158,76 @@
 		width: 100%;
 	}
 
-	.projeto-item {
-		display: none;
-	}
-
 	.projeto-item-mobile {
 		display: block;
 	}
 }
 
-.projeto-item-mobile {
-	display: none;
-}
-
-/* @media screen and (max-width: 768px) {
-	.projeto-content {
-		flex-direction: column;
+@media screen and (max-width: 480px) {
+	.projeto-item {
+		padding: 20px 0;
 	}
 
-	.projeto-texto {
-		width: 100%;
-	}
-
-	.projeto-imagem {
-		width: 100%;
+	.projeto-imagem img {
+		height: 300px;
 	}
 
 	.projeto-titulo {
-		font-size: 28px;
+		font-size: 1.5em;
 	}
 
 	.projeto-descricao {
-		font-size: 16px;
+		font-size: 0.9em;
 	}
-} */
+
+	.projeto-status {
+		font-size: 0.9em;
+	}
+}
+
+.info-card {
+	background-color: var(--background-color);
+	border-radius: 10px;
+	color: var(--text-color);
+}
+
+.info-card h2 {
+	font-size: 2em;
+	color: var(--text-color);
+}
+
+.info-card p {
+	font-size: 1.1em;
+	line-height: 1.6;
+}
+
+.info-card ul {
+	font-size: 1.1em;
+	line-height: 1.6;
+}
+
+.info-card a {
+	color: rgb(65, 86, 220);
+}
+
+@media (max-width: 768px) {
+	.info-card h2 {
+		font-size: 1.8em;
+	}
+
+	.info-card p,
+	.info-card ul {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 480px) {
+	.info-card h2 {
+		font-size: 1.5em;
+	}
+
+	.info-card p,
+	.info-card ul {
+		font-size: 0.9em;
+	}
+}

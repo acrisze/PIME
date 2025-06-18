@@ -1,54 +1,44 @@
-/* Scroll suave */
 .html-scroll {
     scroll-behavior: smooth;
   }
-
-  /* Header fixo com transparência e blur */
-  .header-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--header-bg);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 2px 8px var(--header-shadow);
-    z-index: 1000;
-    padding: 1rem 2rem;
-    color: var(--text-color);
-    transition: background-color 0.3s, color 0.3s;
-  }
   
-  /* Navegação */
   .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--header-bg);
+    padding: 0.5rem 1rem;
+    min-height: 60px;
   }
   
-  .nav-list {
+  .navbar-nav {
     list-style: none;
-    display: flex;
-    gap: 5rem;
-    margin: 0;
-    padding: 0;
   }
   
-  .nav-item-link {
-    text-decoration: none;
-    font-weight: bold;
+  .nav-link {
     color: var(--nav-link-color);
-    transition: color 0.3s ease;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
   }
   
-  .nav-item-link:hover {
+  .nav-link:hover {
     color: var(--nav-link-hover);
   }
   
-  /* Título da página */
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
   .header-title {
     font-size: 48px;
     font-weight: bold;
-    margin-top: 160px; /* espaço por causa do header fixo */
     text-align: center;
     color: var(--text-color);
   }
@@ -66,62 +56,65 @@
     margin-bottom: 80px;
   }
 
-  @media (max-width: 900px) {
+  .theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 24px;
+    padding: 0.5rem;
+    margin-left: auto;
+  }
+
+  @media (max-width: 991.98px) {
     .navbar {
-      display: none;
+      padding: 0.5rem;
     }
-    .header-container {
-      height: 80px;
+
+    .navbar-collapse {
+      background-color: var(--header-bg);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 1rem;
+      box-shadow: 0 2px 4px var(--header-shadow);
     }
+
+    .navbar-nav {
+      text-align: center;
+    }
+
+    .nav-link {
+      font-size: 1em;
+      padding: 0.75rem 1rem;
+      display: block;
+    }
+
+    .nav-item {
+      margin: 0.5rem 0;
+    }
+
     .theme-toggle {
-      display: none;
+      margin-left: 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hamburger {
+      top: 0.5rem;
+      right: 1rem;
+      font-size: 1.8rem;
     }
     .theme-toggle-mobile {
-      display: flex;
-    }
-    .hamburger {
-      display: block !important;
-      position: fixed;
-      top: 1rem;
-      right: 2rem;
-      z-index: 1100;
-      background: none;
-      border: none;
-      font-size: 2.5rem;
-      color: var(--text-color);
-      cursor: pointer;
+      top: 0.5rem;
+      right: 4rem;
     }
     .mobile-menu {
-      display: block;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 40vw;
-      height: 100vh;
-      background: var(--background-color);
-      box-shadow: -2px 0 10px rgba(0,0,0,0.2);
-      z-index: 1200;
-      padding: 3rem 2rem;
-      gap: 2rem;
-      transform: translateX(100%);
-      transition: transform 0.3s;
-      visibility: hidden;
-      opacity: 0;
-      pointer-events: none;
+      padding: 4rem 1rem;
     }
-    .mobile-menu.open {
-      transform: translateX(0);
-      visibility: visible;
-      opacity: 1;
-      pointer-events: auto;
-      display: block;
-    }
-    .mobile-menu .nav-list {
-      flex-direction: column;
-      gap: 2rem;
-      display: flex;
-      align-items: flex-start;
+    .mobile-menu .nav-item-link {
+      font-size: 1rem;
     }
   }
 

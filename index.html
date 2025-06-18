@@ -1,7 +1,11 @@
+<!DOCTYPE html>
 <html>
 
 <head>
 	<title>Revitalização do Centro Histórico de São Paulo</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
 	<link rel="stylesheet" href="./src/assets/css/global.css">
 	<link rel="stylesheet" href="./src/assets/css/header.css">
 	<link rel="stylesheet" href="./src/assets/css/projetos.css">
@@ -12,89 +16,71 @@
 
 <body>
 
-	<header class="header-container">
-		<nav class="navbar">
-			<ul class="nav-list">
-				<li><a href="#inicio" class="nav-item-link">Início</a></li>
-				<li><a href="#projeto" class="nav-item-link">O Projeto</a></li>
-				<li><a href="#projetos" class="nav-item-link">Prédios Históricos</a></li>
-				<li><a href="#retrofit" class="nav-item-link">Retrofit SP</a></li>
-				<li><a href="#sobre" class="nav-item-link">Sobre Nós</a></li>
-				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
-				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
-			</ul>
-		</nav>
-		<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-		<button class="hamburger" id="hamburgerMenu" aria-label="Abrir menu">☰</button>
-		<button class="theme-toggle-mobile" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-		<nav class="mobile-menu" id="mobileMenu">
-			<ul class="nav-list">
-				<li><a href="#inicio" class="nav-item-link">Início</a></li>
-				<li><a href="#projeto" class="nav-item-link">O Projeto</a></li>
-				<li><a href="#projetos" class="nav-item-link">Prédios Históricos</a></li>
-				<li><a href="#retrofit" class="nav-item-link">Retrofit SP</a></li>
-				<li><a href="#sobre" class="nav-item-link">Sobre Nós</a></li>
-				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
-				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
-			</ul>
+	<header>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+						<li class="nav-item"><a href="#projeto" class="nav-link">O Projeto</a></li>
+						<li class="nav-item"><a href="#projetos" class="nav-link">Prédios Históricos</a></li>
+						<li class="nav-item"><a href="#retrofit" class="nav-link">Retrofit SP</a></li>
+						<li class="nav-item"><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+						<li class="nav-item"><a href="./colabore.html" class="nav-link">Colabore</a></li>
+						<li class="nav-item"><a href="./colaboracoes.html" class="nav-link">Colaborações</a></li>
+					</ul>
+				</div>
+				<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+			</div>
 		</nav>
 	</header>
 
 	<section id="inicio" class="header-info main-section">
-		<h1>Revitalização do Centro Histórico</h1>
-		<p class="subtitle">Um novo olhar para o coração de São Paulo</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h1>Revitalização do Centro Histórico</h1>
+					<p class="subtitle">Um novo olhar para o coração de São Paulo</p>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="projeto" class="container">
-		<div class="projeto-info">
-			<div class="info-card" style="height: 60em;">
-				<h1>Projeto RevitaSp</h1>
-				<p style="font-size: 28px; font-weight: 100;">
-					O RevitaSP é um projeto dedicado em divulgar as revitalizações do centro histórico de São Paulo,
-					dando maior visibilidade para o patrimônio histórico existente. Além de divulgar, o site tem como
-					objetivo informatizar sobre incentivos fiscais oferecidos pela cidade.
-					Se você se interessa por arquitetura, história ou quer entender como São Paulo está se reinventando,
-					o RevitaSP é o lugar certo para começar.
-				</p>
-				<div class="info-card-contribua-images">
-					<img width="90%" src="./src/assets/images/jacques-pilon-draw.jpg" alt="">
+		<div class="row">
+			<div class="col-12">
+				<div class="info-card">
+					<h1>Projeto RevitaSp</h1>
+					<p>
+						O RevitaSP é um projeto dedicado em divulgar as revitalizações do centro histórico de São Paulo,
+						dando maior visibilidade para o patrimônio histórico existente. Além de divulgar, o site tem como
+						objetivo informatizar sobre incentivos fiscais oferecidos pela cidade.
+						Se você se interessa por arquitetura, história ou quer entender como São Paulo está se reinventando,
+						o RevitaSP é o lugar certo para começar.
+					</p>
+					<div class="info-card-contribua-images">
+						<img src="./src/assets/images/jacques-pilon-draw.jpg" alt="" class="img-fluid">
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<hr>
+	<hr class="hr-line">
 
 	<section id="projetos" class="container">
-		<h1 style="margin-top: 40px;">Prédios Históricos</h1>
-		<!-- Projeto 1 -->
-		<div class="projeto-item">
-			<div class="projeto-content">
-				<div class="projeto-texto">
-					<h3 class="projeto-titulo">Edificio Martinelli</h3>
-					<p class="projeto-descricao">
-						O Edificio Martinelli considerado como o primeiro arranha-céu e símbolo do desenvolvimento
-						urbano da cidade, teve sua inauguração em 1929. Foi realizado diversas restaurações buscando
-						preservar suas características históricas. Após 7 anos fechado, o edifício reabriu as portas ao
-						publico depois de passar pelo processo Retrofit, passando a se chamar "Terraço Martinelli".
-					</p>
-
-					<p class="projeto-status">Status: Finalizado</p>
-					<p class="projeto-status">Data de Conclusão: Janeiro de 2024</p>
-					<!-- <button class="saiba-mais">Acompanhar Projeto</button> -->
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6360103305096!2d-46.63758242516609!3d-23.545590578810604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5854575bec47%3A0xcff6dbd0a9dd6bac!2sCondom%C3%ADnio%20do%20Edif%C3%ADcio%20Martinelli!5e0!3m2!1spt-BR!2sbr!4v1747960015205!5m2!1spt-BR!2sbr"
-						width="600" height="350" style="border:0;  border-radius: 10px;" allowfullscreen=""
-						loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="projeto-imagem">
-					<img src="./src/assets/images/martinelli.webp" alt="Martinelli" style="width: 100%; height: 670px;">
-				</div>
+		<div class="row">
+			<div class="col-12">
+				<h1 class="title-space">Prédios Históricos</h1>
 			</div>
 		</div>
 
-		<div class="projeto-item-mobile" style="border: 1px solid red; height: 300px;">
-			<div class="projeto-content">
+		<!-- Projeto 1 -->
+		<div class="row mb-5">
+			<div class="col-lg-6">
 				<div class="projeto-texto">
 					<h3 class="projeto-titulo">Edificio Martinelli</h3>
 					<p class="projeto-descricao">
@@ -106,21 +92,22 @@
 
 					<p class="projeto-status">Status: Finalizado</p>
 					<p class="projeto-status">Data de Conclusão: Janeiro de 2024</p>
-					<!-- <button class="saiba-mais">Acompanhar Projeto</button> -->
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6360103305096!2d-46.63758242516609!3d-23.545590578810604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5854575bec47%3A0xcff6dbd0a9dd6bac!2sCondom%C3%ADnio%20do%20Edif%C3%ADcio%20Martinelli!5e0!3m2!1spt-BR!2sbr!4v1747960015205!5m2!1spt-BR!2sbr"
-						width="600" height="350" style="border:0;  border-radius: 10px;" allowfullscreen=""
+						class="w-100" height="350" style="border:0; border-radius: 10px;" allowfullscreen=""
 						loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
+			</div>
+			<div class="col-lg-6">
 				<div class="projeto-imagem">
-					<img src="./src/assets/images/martinelli.webp" alt="Martinelli" style="width: 100%; height: 670px;">
+					<img src="./src/assets/images/martinelli.webp" alt="Martinelli" class="img-fluid">
 				</div>
 			</div>
 		</div>
 
 		<!-- Projeto 2 -->
-		<div class="projeto-item">
-			<div class="projeto-content" style="flex-direction: row-reverse;">
+		<div class="row mb-5">
+			<div class="col-lg-6 order-lg-2">
 				<div class="projeto-texto">
 					<h3 class="projeto-titulo">Edificio Jacques Pilon</h3>
 					<p class="projeto-descricao">
@@ -134,21 +121,20 @@
 					<p class="projeto-status">Data de Conclusão: Abril de 2019</p>
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.823864112965!2d-46.63774522516627!3d-23.53883667881529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5733f8ea61c9%3A0xcf1d5bf1dde08bd1!2sCondom%C3%ADnio%20Jacques%20Pilon%20Residence!5e0!3m2!1spt-BR!2sbr!4v1747960634995!5m2!1spt-BR!2sbr"
-						width="600" height="378" style="border:0; border-radius: 10px;" allowfullscreen=""
+						class="w-100" height="378" style="border:0; border-radius: 10px;" allowfullscreen=""
 						loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-					<!-- <button class="saiba-mais">Acompanhar Projeto</button> -->
 				</div>
+			</div>
+			<div class="col-lg-6 order-lg-1">
 				<div class="projeto-imagem">
-					<img src="./src/assets/images/jacques pilon.jpg" alt="Edificion Jaques Pilon"
-						style="width: 100%; height: 700px;">
+					<img src="./src/assets/images/jacques pilon.jpg" alt="Edificion Jaques Pilon" class="img-fluid">
 				</div>
 			</div>
 		</div>
 
 		<!-- Projeto 3 -->
-		<div class="projeto-item">
-			<div class="projeto-content">
+		<div class="row mb-5">
+			<div class="col-lg-6">
 				<div class="projeto-texto">
 					<h3 class="projeto-titulo">Edifício Guinle</h3>
 					<p class="projeto-descricao">
@@ -163,19 +149,20 @@
 					<p class="projeto-status">Data de conclusão: Outubro de 2011</p>
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14630.170062286317!2d-46.65251591333882!3d-23.548951311527798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ab2de4c003%3A0xb7578aa314b1bf38!2sEdif%C3%ADcio%20Guinle!5e0!3m2!1spt-BR!2sbr!4v1747962326300!5m2!1spt-BR!2sbr"
-						width="600" height="390" style="border:0; border-radius: 10px;" allowfullscreen=""
+						class="w-100" height="390" style="border:0; border-radius: 10px;" allowfullscreen=""
 						loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
 				</div>
+			</div>
+			<div class="col-lg-6">
 				<div class="projeto-imagem">
-					<img src="./src/assets/images/guinle.png" style="height: 770px;" alt="Edifício Guinle">
+					<img src="./src/assets/images/guinle.png" alt="Edifício Guinle" class="img-fluid">
 				</div>
 			</div>
 		</div>
 
 		<!-- Projeto 4 -->
-		<div class="projeto-item">
-			<div class="projeto-content" style="flex-direction: row-reverse;">
+		<div class="row mb-5">
+			<div class="col-lg-6 order-lg-2">
 				<div class="projeto-texto">
 					<h3 class="projeto-titulo">Edifício Central 1926</h3>
 					<p class="projeto-descricao">
@@ -191,61 +178,64 @@
 					<p class="projeto-status">Data de conclusão: Dezembro de 2012</p>
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.517769195003!2d-46.64130272391476!3d-23.549840761170465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce593b005582ff%3A0x1487eb6f4ab17105!2sCentral%201926!5e0!3m2!1spt-BR!2sbr!4v1750204321546!5m2!1spt-BR!2sbr"
-						width="600" height="390" style="border:0; border-radius: 10px;" allowfullscreen=""
+						class="w-100" height="390" style="border:0; border-radius: 10px;" allowfullscreen=""
 						loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
 				</div>
+			</div>
+			<div class="col-lg-6 order-lg-1">
 				<div class="projeto-imagem">
-					<img src="./src/assets/images/cental.png" style="height: 800px;" alt="Edifício Central 1926">
+					<img src="./src/assets/images/cental.png" alt="Edifício Central 1926" class="img-fluid">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<hr>
+	<hr class="hr-line">
 
 	<section id="retrofit" class="container">
-		<h1 style="margin: 40px 0px 0px 0px;">Retrofit</h1>
-		<div class="projeto-info" style="margin-bottom: 15px;">
-			<div class="info-card" style="height: auto;">
-				<h2 style="font-size: 32px; margin: 0px 0 20px;">O que é o Retrofit em SP?</h2>
-				<p style="font-size: 20px; margin-bottom: 40px;">
-					Retrofit é o processo de atualizar prédios antigos, modernizando instalações para garantir
-					segurança, conforto e novas funcionalidades, sem perder sua essência histórica.
-				</p>
-
-				<h2 style="font-size: 32px; margin: 30px 0 20px;">Benefícios fiscais previstos pelo programa</h2>
-				<p style="font-size: 20px; margin-bottom: 20px;">
-					O Programa Requalifica Centro (Lei nº 17.577/2021), sancionado em 21 de julho de 2021, oferece
-					incentivos para estimular transformações em varruções centenárias:
-				</p>
-
-				<ul style="font-size: 20px; line-height: 1.6; margin-left: 20px; margin-bottom: 30px;">
-					<li>Remissão de créditos de IPTU</li>
-					<li>Isenção total de IPTU nos 3 anos seguintes à conclusão da obra</li>
-					<li>Alíquotas progressivas de IPTU ao longo de 5 anos, até o valor integral no 6º ano</li>
-					<li>ISS reduzido a 2% para serviços relacionados à requalificação (engenharia, arquitetura, limpeza
-						etc.)</li>
-					<li>Isenção de ITBI ao adquirir o imóvel</li>
-					<li>Isenção de taxas municipais para instalação e funcionamento por 5 anos</li>
-					<li>Não computar áreas de uso não-residencial como limitantes de varrução</li>
-					<li>Sem exigência de outorga onerosa ao mudar o uso do prédio</li>
-				</ul>
-
-				<div>
-					<h2 style="font-size: 32px; margin: 30px 0 20px;">Em resumo</h2>
-					<p style="font-size: 20px; line-height: 1.6;">
-						O retrofit em SP transforma prédios antigos, principalmente na região central (perímetro de 6,4
-						km²), tornando-os moradias e espaços úteis, com extensa economia de impostos e modernização
-						urbana — beneficiando moradores, investidores e o patrimônio histórico da cidade.
+		<div class="row">
+			<div class="col-12">
+				<h1 class="title-space">Retrofit</h1>
+				<div class="info-card">
+					<h2>O que é o Retrofit em SP?</h2>
+					<p>
+						Retrofit é o processo de atualizar prédios antigos, modernizando instalações para garantir
+						segurança, conforto e novas funcionalidades, sem perder sua essência histórica.
 					</p>
-				</div>
 
-				<p>Saiba mais em: <a
-						href="https://prefeitura.sp.gov.br/w/noticia/prefeitura-de-sao-paulo-sanciona-lei-que-propoe-incentivos-fiscais-para-retrofit-de-predios-antigos-da-regiao-central"
-						target="_blank" style="text-decoration: none; margin-top: 20px; color: rgb(65, 86, 220);">
-						https://prefeitura.sp.gov.br/w/noticia/prefeitura-de-sao-paulo-sanciona-lei-que-propoe-incentivos-fiscais-para-retrofit-de-predios-antigos-da-regiao-central
-					</a></p>
+					<h2>Benefícios fiscais previstos pelo programa</h2>
+					<p>
+						O Programa Requalifica Centro (Lei nº 17.577/2021), sancionado em 21 de julho de 2021, oferece
+						incentivos para estimular transformações em varruções centenárias:
+					</p>
+
+					<ul>
+						<li>Remissão de créditos de IPTU</li>
+						<li>Isenção total de IPTU nos 3 anos seguintes à conclusão da obra</li>
+						<li>Alíquotas progressivas de IPTU ao longo de 5 anos, até o valor integral no 6º ano</li>
+						<li>ISS reduzido a 2% para serviços relacionados à requalificação (engenharia, arquitetura, limpeza
+							etc.)</li>
+						<li>Isenção de ITBI ao adquirir o imóvel</li>
+						<li>Isenção de taxas municipais para instalação e funcionamento por 5 anos</li>
+						<li>Não computar áreas de uso não-residencial como limitantes de varrução</li>
+						<li>Sem exigência de outorga onerosa ao mudar o uso do prédio</li>
+					</ul>
+
+					<div>
+						<h2>Em resumo</h2>
+						<p>
+							O retrofit em SP transforma prédios antigos, principalmente na região central (perímetro de 6,4
+							km²), tornando-os moradias e espaços úteis, com extensa economia de impostos e modernização
+							urbana — beneficiando moradores, investidores e o patrimônio histórico da cidade.
+						</p>
+					</div>
+
+					<p>Saiba mais em: <a
+							href="https://prefeitura.sp.gov.br/w/noticia/prefeitura-de-sao-paulo-sanciona-lei-que-propoe-incentivos-fiscais-para-retrofit-de-predios-antigos-da-regiao-central"
+							target="_blank" class="text-decoration-none">
+							https://prefeitura.sp.gov.br/w/noticia/prefeitura-de-sao-paulo-sanciona-lei-que-propoe-incentivos-fiscais-para-retrofit-de-predios-antigos-da-regiao-central
+						</a></p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -256,7 +246,7 @@
 		<div class="projeto-info">
 			<div class="info-card" style="height: auto; padding: 40px;">
 				<h1 style="margin-bottom: 15px;">Sobre Nós</h1>
-				<p style="font-size: 28px; margin-bottom: 40px; text-align: justify;">
+				<p>
 					Somos um grupo de estudantes do 5º semestre do curso de Analise e Desenvolvimento de Sistema do
 					Centro Universitário Belas Artes de São Paulo.<br>
 					Este site foi desenvolvido como parte do nosso Projeto Integrador, unindo tecnologia, pesquisa e
@@ -313,50 +303,11 @@
 	</footer>
 
 	<script src="./src/assets/scripts/index.js"></script>
-	<script>
-		var form = document.getElementById('subscribeForm');
+	<script src="./src/assets/scripts/api.js"></script>
 
-		form.addEventListener('submit', async (event) => {
-			event.preventDefault();
-
-			var email = document.getElementById('inscrever').value;
-
-			var url = 'https://rfzdciezrbgkhpcfacet.supabase.co/rest/v1/news_letter';
-			var apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmemRjaWV6cmJna2hwY2ZhY2V0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxMTU0OTksImV4cCI6MjA2NTY5MTQ5OX0.dZwWjmraUNYYw7eYjKPuf3_9qmtpPi5_I1rWh2ld9-c';
-
-			try {
-				var requisicao = await fetch(url, {
-					method: 'POST',
-					headers: {
-						'apikey': apiKey,
-						'Authorization': `Bearer ${apiKey}`,
-						'Content-Type': 'application/json',
-						'Prefer': 'return=representation'
-					},
-					body: JSON.stringify({ email })
-				});
-
-				var data = await requisicao.json();
-				var resposta;
-
-				if (requisicao.ok) {
-					resposta = 'E-mail cadastrado com sucesso!';
-				} else {
-					if (requisicao.status === 409) {
-						resposta = 'E-mail já cadastrado.';
-					} else {
-						resposta = 'Erro desconhecido ao cadastrar: ' + JSON.stringify(data);
-					}
-				}
-
-				alert(resposta);
-			} catch (error) {
-				console.log('Erro ->', error.message);
-			}
-
-			document.getElementById('inscrever').value = '';
-		});
-	</script>
+	<!-- Bootstrap JS and Popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

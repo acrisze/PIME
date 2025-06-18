@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Colaborações - RevitaSP</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./src/assets/css/global.css">
 	<link rel="stylesheet" href="./src/assets/css/header.css">
 	<link rel="stylesheet" href="./src/assets/css/projetos.css">
@@ -13,37 +14,33 @@
 </head>
 
 <body>
-	<header class="header-container">
-		<nav class="navbar">
-			<ul class="nav-list">
-				<li><a href="index.html#inicio" class="nav-item-link">Início</a></li>
-				<li><a href="index.html#projeto" class="nav-item-link">O Projeto</a></li>
-				<li><a href="index.html#projetos" class="nav-item-link">Prédios Históricos</a></li>
-				<li><a href="index.html#retrofit" class="nav-item-link">Retrofit SP</a></li>
-				<li><a href="index.html#sobre" class="nav-item-link">Sobre Nós</a></li>
-				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
-				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
-			</ul>
-		</nav>
-		<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-		<button class="theme-toggle-mobile" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-		<button class="hamburger" id="hamburgerMenu" aria-label="Abrir menu">☰</button>
-		<nav class="mobile-menu" id="mobileMenu">
-			<ul class="nav-list">
-				<li><a href="index.html#inicio" class="nav-item-link">Início</a></li>
-				<li><a href="index.html#projeto" class="nav-item-link">O Projeto</a></li>
-				<li><a href="index.html#projetos" class="nav-item-link">Prédios Históricos</a></li>
-				<li><a href="index.html#retrofit" class="nav-item-link">Retrofit SP</a></li>
-				<li><a href="index.html#sobre" class="nav-item-link">Sobre Nós</a></li>
-				<li><a href="./colabore.html" class="nav-item-link">Colabore</a></li>
-				<li><a href="./colaboracoes.html" class="nav-item-link">Colaborações</a></li>
-			</ul>
+	<header>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item"><a href="./index.html#inicio" class="nav-link">Início</a></li>
+						<li class="nav-item"><a href="./index.html#projeto" class="nav-link">O Projeto</a></li>
+						<li class="nav-item"><a href="./index.html#projetos" class="nav-link">Prédios Históricos</a>
+						</li>
+						<li class="nav-item"><a href="./index.html#retrofit" class="nav-link">Retrofit SP</a></li>
+						<li class="nav-item"><a href="./index.html#sobre" class="nav-link">Sobre Nós</a></li>
+						<li class="nav-item"><a href="./colabore.html" class="nav-link">Colabore</a></li>
+						<li class="nav-item"><a href="./colaboracoes.html" class="nav-link">Colaborações</a></li>
+					</ul>
+				</div>
+				<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+			</div>
 		</nav>
 	</header>
 
-	<section class="container" style="min-height: 70vh;">
+	<section class="container" style="">
 		<div class="projeto-info">
-			<div class="info-card" style="height: auto; padding: 40px;">
+			<div class="info-card">
 				<h1 style="margin-bottom: 15px;">Sugestões Recebidas</h1>
 				<p style="font-size: 20px; margin-bottom: 30px;">Veja abaixo as contribuições enviadas pela comunidade
 					para a revitalização do centro histórico de São Paulo.</p>
@@ -93,22 +90,35 @@
 				}
 
 				sugestoes.reverse().forEach((item, index) => {
-					const div = document.createElement('div');
-					div.classList.add('projeto-item');
-					div.style.background = 'var(--background-color)';
-					div.style.color = 'var(--text-color)';
-					div.style.border = 'none';
+					const row = document.createElement('div');
+					row.className = 'row align-items-center mb-4';
 
-					div.innerHTML = `
-						<div class="projeto-content" style="${index % 2 === 0 ? 'flex-direction: row-reverse' : ''}">
-							<div class="projeto-texto">
-								<p style="font-size: 22px; font-weight: bold; margin-bottom: 10px;"><b>Nome:</b> ${item.nome}</p>
-								<p style="font-size: 18px; margin-bottom: 10px;"><b>Mensagem:</b> ${item.sugestao}</p>
-							</div>
-							${item.imagem_url ? `<div class="projeto-imagem"><img src="${item.imagem_url}" alt="Imagem da sugestão"></div>` : ''}
-						</div>
+					// Alterna ordem para cada item
+					let imgOrder = 'order-md-1';
+					let txtOrder = 'order-md-2';
+					if (index % 2 !== 0) {
+						imgOrder = 'order-md-2';
+						txtOrder = 'order-md-1';
+					}
+
+					// Imagem
+					const colImg = document.createElement('div');
+					colImg.className = `col-12 col-md-4 mb-3 mb-md-0 ${imgOrder}`;
+					if (item.imagem_url) {
+						colImg.innerHTML = `<img src="${item.imagem_url}" alt="Imagem da sugestão" class="img-fluid rounded" style="max-height:320px; object-fit:cover; width:100%;">`;
+					}
+
+					// Texto
+					const colTxt = document.createElement('div');
+					colTxt.className = `col-12 col-md-8 ${txtOrder}`;
+					colTxt.innerHTML = `
+						<p style="font-size: 22px; font-weight: bold; margin-bottom: 10px;"><b>Nome:</b> ${item.nome}</p>
+						<p style="font-size: 18px; margin-bottom: 10px;"><b>Mensagem:</b> ${item.sugestao}</p>
 					`;
-					container.appendChild(div);
+
+					row.appendChild(colImg);
+					row.appendChild(colTxt);
+					container.appendChild(row);
 				});
 
 			} catch (erro) {
@@ -119,6 +129,10 @@
 		carregarSugestoes();
 	</script>
 	<script src="./src/assets/scripts/index.js"></script>
+
+	<!-- Bootstrap JS and Popper.js -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

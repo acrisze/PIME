@@ -26,17 +26,13 @@ themeToggles.forEach(item => {
 
 // Update theme icon
 function updateThemeIcon(item, theme) {
-    console.log("🚀 ~ updateThemeIcon ~ theme:", theme)
-    console.log("🚀 ~ updateThemeIcon ~ item:", item)
     item.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
 
 // Hamburger menu mobile
 const hamburger = document.getElementById('hamburgerMenu');
-console.log("🚀 ~ hamburger:", hamburger)
 const mobileMenu = document.getElementById('mobileMenu');
-console.log("🚀 ~ mobileMenu:", mobileMenu)
 
 hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('open');
